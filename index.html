@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/fontawesome/fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Bookshelf Apps</title>
+</head>
+<body>
+    <header class="head-bar">
+        <h1 class="head-title">Bookshelf Apps</h1>
+        <nav class="shadow">
+            <ul>
+                <li><a href="#"><i class="fa fa-search"></i> <p>Eksplor Buku</p> </a></li>
+                <li><a href="#formBook"><i class="fa fa-receipt"></i> <p>Form Buku</p> </a></li>
+                <li><a href="#incompleteBook"><i class="fa fa-book-open-reader"></i> <p>Belum selesai baca</p> </a></li>
+                <li><a href="#completedBook"><i class="fa fa-check-to-slot"></i><p>Selesai baca</p> </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row">
+            <section class="allbook-section shadow" id="listAllBook">
+                <h2 align="center">Koleksi Semua Buku</h2>
+                <div class="search-book shadow">
+                    <form id="searchBook" autocomplete="off">
+                        <input type="text" id="searchBookTitle" placeholder="Masukkan Judul">
+                        <button id="searchSubmit" type="submit" ><i class="fa fa-search"></i></button>
+                    </form>
+                    
+                </div>
+                <div id="allBookList" class="allBookList">
+
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section class="book-section shadow" id="incompleteBook">
+                <h2 align="center">Rak belum selesai dibaca</h2>
+                <div id="incompleteBookList" class="bookList">
+                    
+                </div>
+            </section>
+
+            <section class="form-section shadow" id="formBook">
+                <h2 align="center">Masukkan Buku Baru</h2>
+                <form id="inputBook" autocomplete="off">
+                    <div class="form-element">
+                        <label for="titleBook">Judul Buku</label><br>
+                        <input type="text" id="titleBook" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="authorBook">Penulis</label><br>
+                        <input type="text" id="authorBook" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="yearBook">Tahun</label><br>
+                        <input type="number" id="yearBook"  required>
+                    </div>
+                    <div class="form-element-inline">                   
+                        <input type="checkbox" id="bookIsComplete"  value="bookIsComplete">
+                        <label for="bookIsComplete">Selesai Dibaca </label>
+                    </div>
+                    <div class="form-element">
+                        <button id="submitBook" type="submit">
+                            <i class="fa fa-floppy-disk"></i> Simpan
+                        </button>
+                        <button id="resetFormBook" type="reset">
+                            <i class="fa fa-arrows-rotate"></i> Bershikan
+                        </button>
+                    </div>
+                </form>
+            </section>
+    
+            <section class="book-section shadow" id="completedBook">
+                <h2 align="center">Rak selesai dibaca</h2>
+                <div id="completeBookList" class="bookList">
+                </div>
+            </section>
+        </div>
+        <script>
+            
+        </script>
+    </main>
+
+    <footer>
+        <p>MSIB Batch 2 | Dicoding | Belajar Front-End Web untuk Pemula</p>
+        <p>Nurul Huda &copy; 2022</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/sweetalert.js"></script>
+</body>
+</html>

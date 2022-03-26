@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=League+Spartan&family=Titillium+Web&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #533E85;
+    padding: 0px;
+    position: fixed;
+}
+nav ul{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+}
+
+nav ul li{
+    width: 90%;
+    text-align: center;
+    display: inline;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #533E85;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    background-color: #533E85;
+    padding: 10px;
+}
+footer p{
+    font-size: 1.2em;
+    color : #ddd;
+    text-align: center;
+    margin: 5px 0;
+}
+
+h1.head-title{
+    color: #ddd;
+    font-size: 2.2em;
+    text-align: center;
+    padding: 10px 0;;
+}
+
+h1, h2{
+    color: #533E85;
+}
+
+.form-element{
+    margin: auto;
+    margin-top: 20px;
+}
+
+.form-element-inline{
+    display: flex;
+    align-items: center;
+}
+
+.form-element-inline input{
+    flex-basis: 10%;
+} 
+.form-element-inline label {
+    flex-basis: 90%;
+}
+
+.form-section{
+    width: 28%;
+    margin-top: 30px;
+    padding: 20px;
+    min-height: 35vh;
+    border:1px solid #333;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+.search-book{
+    width: 100%;
+    margin: 5px auto;
+    padding: 10px;
+    border:1px solid #333;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: #ddd;
+}
+.allbook-section{
+    width: 90%;
+    height: 100vh;
+    margin: 10px auto;
+    margin-top: 8.5em;
+    padding: 20px;
+    border:1px solid #333;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+.book-section{
+    width: 30%;
+    margin-top: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 20px;
+    border:1px solid #333;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+.form-section input{
+    width: 100%;
+    padding: 0.2em;
+    border-radius: 8px;
+    border: 1px solid #333;
+    font-size: 1.2em;
+}
+
+button#submitBook{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 5px;
+    border:1px solid #333;
+    cursor: pointer;
+    background-color: rgb(69, 121, 199);
+    color: #ddd;
+}
+button#resetFormBook{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 5px;
+    border:1px solid #333;
+    cursor: pointer;
+    background-color: rgb(199, 69, 69);
+    color: #ddd;
+}
+
+form#searchBook{
+    display: flex;
+    width: 100%;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+form#searchBook input{
+    width: 95%;
+    padding: 0.2em;
+    border-radius: 8px;
+    border: 1px solid #333;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+form#searchBook button{
+    margin-left: auto;
+    padding: 0.2em 0.6em;
+    border-radius: 8px;
+    font-size: 1.2em;
+    border:1px solid #333;
+    cursor: pointer;
+    background-color: rgb(69, 121, 199);
+    color: #ddd;
+}
+
+button{
+    font-family: 'League Spartan', sans-serif;
+}
+
+button.primary:hover, button.warning:hover, button.danger:hover, button#submitBook:hover, button#resetFormBook:hover{
+    color: #333;
+    background-color: #ddd;
+}
+
+button#searchSubmit{
+    padding: 4px 8px;
+}
+
+button.primary{
+    padding: 4px 8px;
+    font-size: 0.8em;
+    background-color: rgb(69, 121, 199);
+    color: #ddd;
+    border-radius: 8px;
+    border:none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+button.danger{
+    padding: 4px 8px;
+    font-size: 0.8em;
+    background-color: rgb(199, 69, 69);
+    color: #ddd;
+    border-radius: 8px;
+    border:none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+button.warning{
+    padding: 4px 8px;
+    font-size: 0.8em;
+    background-color: rgb(212, 176, 75);
+    color: #ddd;
+    border-radius: 8px;
+    border:none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+p.warning{
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: #444;
+    background-color: rgb(255, 223, 134);
+}
+
+p.success{
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: #444;
+    background-color: rgb(143, 252, 148);
+}
+
+.book-item{
+    border:1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px 0;
+}
+
+.inner{
+    border: none;
+    border-radius: 10px;
+    background-color: #efefef;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.shadow{
+    box-shadow: 1px 2px 8px #333;
+}
+
+.ml-5{
+    margin-left: 5px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.bookList{
+    max-height: 53vh;
+    overflow-y: scroll;
+    padding: 5px;
+    font-family: 'Fredoka', sans-serif;
+}
+div.allBookList{
+    height: 80%;
+    overflow-y: scroll;
+    padding: 5px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+::placeholder, input{
+    font-family: 'League Spartan', sans-serif;
+}
+
+#incompleteBookList article{
+    background-color: rgb(185, 128, 223, 0.5);
+}
+
+#completeBookList article{
+    background-color: rgba(111, 207, 116, 0.5);
+}
+
+a i.fa{
+    font-size: 1.2em;
+    padding: 6px;
+    padding-bottom: 0;
+}
+a p{
+    font-size: 0.8em;
+}
+a i.fa:hover{
+    color:#333;
+}
+
+@media screen and (max-width:800px){
+    header div.row section{
+        width: 80%;
+    }
+
+    main div.row{
+        flex-direction: column;
+    }
+
+    main div.row section{
+        width: 80%;
+    }
+
+    main div.row section.form-section{
+        order: 1;
+    }
+    main div.row section.book-section{
+        order: 2;
+    }
+
+    .form-section, .book-section {
+        margin: 30px auto;
+    }
+
+    footer p{
+        font-size: 1em;
+        color : #ddd;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    a i.fa{
+        font-size: 1em;
+    }
+
+    a p{
+        font-size: 0.65em;
+    }
+
+}
